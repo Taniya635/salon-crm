@@ -7,7 +7,7 @@ import { Staff, ServiceItem, Appointment, Bill } from '../models/types';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:5001/api';
+  private apiUrl = '/api';
 
   private staffSubject = new BehaviorSubject<Staff[]>([]);
   private servicesSubject = new BehaviorSubject<ServiceItem[]>([]);
